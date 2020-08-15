@@ -1,0 +1,11 @@
+.Layout {
+    background-color: #3494d3;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.Contenido {
+    background-color: white;
+    width: 100%;
+    min-height: 100vh;
+}
