@@ -97,28 +97,27 @@ const EditarUsuario = props => {
 
     // carga la foto subida en el state
     const imageUploadHandler = (files) => {
-        setFoto(files);
+        setFoto(files[0]);
     }
 
+    // ejecuta la action para mandar todo al backend
     const editarUsuarioHandler = () => {
         const usuario = {
             rol: rol,
             email: email,
             telefono: telefono,
-            foto: foto,
-            datos: {
-                dni: dni,
-                apellido: apellido,
-                nombre: nombre,
-                fechaNacimiento: fechaNacimiento,
-                sexo: sexo,
-                calle: calle,
-                numero: numero,
-                piso: piso,
-                departamento: departamento,
-                localidad: localidad,
-                provincia: provincia,
-            }
+            file: foto,
+            dni: dni,
+            apellido: apellido,
+            nombre: nombre,
+            fechaNacimiento: fechaNacimiento,
+            sexo: sexo,
+            calle: calle,
+            numero: numero,
+            piso: piso,
+            departamento: departamento,
+            localidad: localidad,
+            provincia: provincia,
         };
         let id = props.editar ? props.usuario.id : "";
         props.editarUsuario(id, usuario, props.editar);
