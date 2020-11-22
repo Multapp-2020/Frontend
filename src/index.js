@@ -11,6 +11,10 @@ import notifierReducer from "./store/reducers/notifier";
 import loginReducer from "./store/reducers/login";
 import cambiarContrasenaReducer from "./store/reducers/cambiarContrasena";
 import perfilReducer from "./store/reducers/perfil";
+import multasReducer from "./store/reducers/multas";
+import filtroReducer from "./store/reducers/filtro";
+import multaReducer from "./store/reducers/multa";
+import resolverMultaReducer from "./store/reducers/resolverMulta";
 import usuariosReducer from "./store/reducers/usuarios";
 import editarUsuarioReducer from "./store/reducers/editarUsuario";
 import eliminarUsuarioReducer from "./store/reducers/eliminarUsuario";
@@ -25,6 +29,10 @@ const reducers = combineReducers({
     login: loginReducer,
     cambiarContrasena: cambiarContrasenaReducer,
     perfil: perfilReducer,
+    multas: multasReducer,
+    filtro: filtroReducer,
+    multa: multaReducer,
+    resolverMulta: resolverMultaReducer,
     usuarios: usuariosReducer,
     editarUsuario: editarUsuarioReducer,
     eliminarUsuario: eliminarUsuarioReducer,
